@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+;
+}
+@font-face{
+   font-family: "Inter Thin";
+   src: url(font/Inter-VariableFont_slnt\,wght.ttf);
+   src: url(font/static/Inter-Bold.ttf);
+   src: url(font/static/Inter-ExtraBold.ttf);
+   src: url(font/static/Inter-Regular.ttf);
+
+}
+body{
+    font-family: "Inter Thin";
+    width: 100%;
+    background: hsl(36, 100%, 99%);
+}
+.container {
+    width: 100%;
+    max-width: 1440px;
+    /* height: 1024px; */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 162px;
+    width: 100%;
+}
+header .Logo {
+ max-width: 150px;
+width: 55px;
+}
+header .navigation{
+    display: flex;
+}
+header .navigation li{
+    list-style: none;
+    
+}
+header .navigation li a{
+    display: inline-block;
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+header .navigation li a:hover{
+    color: hsl(5, 85%, 63%);
+}
+.toggle{
+    position: relative;
+    width: 32px;
+    height: 40px;
+    /* background: rgba(202, 196, 196, 0.1); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+
+}
+.toggle::before{
+content: '';
+position: absolute;
+width: 100%;
+height: 2px;
+background: #000000;
+transform: translateY(-10px);
+transition: 0.5s;
+box-shadow: 0 10px 0 #000000;
+}
+.toggle::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #000000;
+    transform: translateY(10px);
+    transition: 0.25s;
+ 
+    }
+
+.parent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.child{
+    width: 790px;
+    height: 525px;
+}
+.imageBox{
+    width: 618px;
+    height: 250px;
+    margin-left: 172px;
+}
+.imageBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contentBox{
+    width: 789px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+
+   
+}
+.brightFuture{
+    width: 100%;
+}
+.brightFuture h4{
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 19px;
+    margin-left: 168px;
+    color: #000000;
+
+    }
+.paragraph{
+    width: 100%;
+}
+.paragraph p{
+    font-size: 18px;
+    color: hsl(236, 13%, 42%);
+    margin-left: 20px;
+    margin-top: -30px;
+}
+.paragraph .btn{
+    position: relative;
+    top: 33px;
+    right: -21px;
+    font-size: 15px;
+    color:hsl(36, 100%, 99%) ;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background:hsl(5, 85%, 63%);
+    padding: 10px 35px;
+    text-align: center;
+    outline: none;
+
+
+}
+.child2{
+    width:316px;
+    height:433px;
+    position: relative;
+    left: -184px;
+    padding: 15px;
+    background: hsl(240, 100%, 5%);
+}
+.child2 .heading{
+  width:340px;
+height:140px;
+/* display: flex;
+flex-direction: column; */
+}
+.child2 .heading h1{
+    font-size: 25px;
+    font-weight: bold;
+    color:  hsl(35, 77%, 62%);
+    margin-bottom: 10px;
+}
+.child2 .heading h3{
+    font-size: 15px;
+    font-weight: bold;
+    color: hsl(36, 100%, 99%) ;
+    margin-top: 12px;
+}
+.child2 .heading:nth-child(2) h3{
+    margin-top: 35px;
+} 
+.child2 .heading1:nth-child(3) h3{
+    margin-top:0;
+} 
+.child2 .heading  p{
+    font-size: 15px;
+    color:  hsl(236, 13%, 42%);
+    text-align: left;
+    margin-top: 15px;
+    padding: 0px 70px 0px 0px;
+    border-bottom: 2px solid rgba(202, 196, 196, 0.1);
+    padding-bottom: 40px;
+    
+}
+
+.child2 .heading1 h3{
+    font-size: 15px;
+    font-weight: bold;
+    color: hsl(36, 100%, 99%) ;
+    margin-top: 12px;
+}
+.child2 .heading1  p{
+    font-size: 15px;
+    color:  hsl(236, 13%, 42%);
+    text-align: left;
+    margin-top: 15px;
+    padding: 0px 70px 0px 0px;
+}
+
+.cardBox{
+    /* position: relative;
+    left: 166px; */
+    width: 100%;
+    height:100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: -65px;
+
+}
+.cardBox .card{
+    width: 330px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -9px;
+}
+.cardBox .card .Image-Box{
+    width: 100px;
+    height: 100px;
+}
+.cardBox .card .Image-Box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cardBox .content-Box h1{
+    color: hsl(236, 13%, 42%);
+    padding: 5px 20px;
+    font-size: 28px;
+    font-weight: 800;
+    opacity: 0.5;
+}
+.cardBox .content-Box h2{
+    padding: 5px 20px;
+    font-size: 14px;
+    font-weight: 1000;
+    color: hsl(208, 114%, -82%);
+}
+.cardBox .content-Box p{
+    color: hsl(236, 13%, 42%);
+    padding: 5px 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+@media (max-width:375px){
+      .container{
+        max-width: 375px;
+        height: 100%;
+      }
+
+    header{
+
+   
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    header .Logo{
+        position: absolute;
+        left: 40px;
+        width: 130px;
+    }
+    header .navigation{
+        display: none;
+    }
+    .toggle{
+        position: absolute;
+        right:-511px;
+        top: 24px;
+        height: 100px;
+        width: 70px;
+    }
+    .parent{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .parent .child{
+        width: 850px;
+        height: 1400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imageBox{
+        width: 800px;
+        height: 600px;
+    }
+    .imageBox img{
+        width: 100%;
+        height: 100%;
+       margin-left: -92px;
+       margin-top: 61px;
+    }
+    .contentBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .brightFuture h4{
+        font-size: 90px;
+        margin-top: 150px;
+        margin-left: 10px;
+        line-height: 2px;
+    }
+}
